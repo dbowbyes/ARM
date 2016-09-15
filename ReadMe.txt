@@ -1,0 +1,1 @@
+To enable billing and owner tags to be added by default to ARM resources two sets of ARM Policies are requried, one policy that fires if there are no tags present for the resource and then two other policies which fire if there are tags present but no owner tag or costcenter tag.

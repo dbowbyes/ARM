@@ -1,0 +1,28 @@
+{
+  "if": {
+    "allOf": [
+      {
+        "field": "tags",
+        "exists": "true"
+      },
+      {
+        "field": "tags.costCenter",
+        "exists": "false"
+      }
+    ]
+  },
+  "then": {
+    "effect": "append",
+    "details": [
+      {
+        "field": "tags.CostCenter",
+        "value": "666"
+      }
+    ]
+  }
+}  
+
+
+
+
+
